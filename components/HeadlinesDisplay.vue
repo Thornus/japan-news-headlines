@@ -1,11 +1,10 @@
 <template>
   <div>
-    <h1>Headlines</h1>
+    <h1 class="text-4xl text-center">よこそう！</h1>
   </div>
 </template>
 
 <script lang="ts" setup>
-  const colorMode = useColorMode();
 </script>
 
 <style>
