@@ -5,7 +5,11 @@ export default {
     fontFamily: {
       'noto-sans-jp': ['Noto Sans JP', 'sans-serif'],
     },
-    extend: {},
+    extend: {
+      colors: {
+        'brand-black': '#212427',
+      }
+    },
   },
   plugins: [],
 }
