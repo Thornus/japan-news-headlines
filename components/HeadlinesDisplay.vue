@@ -19,10 +19,10 @@
 </template>
 
 <script lang="ts" setup>
-  const { data, status, error, refresh } = useFetch(`https://gnews.io/api/v4/top-headlines?category=technology&lang=ja&country=jp&apikey=d187261d9a92e0087ee1b2e942c800e0`);
+  const { data, status, error, refresh } = await useFetch(`https://gnews.io/api/v4/top-headlines?category=technology&lang=ja&country=jp&apikey=d187261d9a92e0087ee1b2e942c800e0`);
   
   let headlines: string[] = [];
-  data.value.articles.forEach((article: any) => {
+  data.value?.articles.forEach((article: any) => {
     headlines.push(article.title);
   });
 
