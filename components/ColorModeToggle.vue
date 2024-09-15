@@ -1,0 +1,20 @@
+<template>
+  <div>
+    <button class="absolute right-1 bottom-1 p-2" @click="toggleColorMode">
+      <Icon v-if="colorMode.value === 'light'" name="heroicons:moon-solid" />
+      <Icon v-else name="heroicons:sun-solid" />
+    </button>
+  </div>
+</template>
+
+<script lang="ts" setup>
+  const colorMode = useColorMode();
+
+  const toggleColorMode = () => {
+    colorMode.value = colorMode.value === 'dark' ? 'light' : 'dark';
+  };
+</script>
+
+<style>
+
+</style>
