@@ -13,5 +13,11 @@ export default defineNuxtConfig({
     families: {
       "Noto Sans JP": [400, 600, 700]
     }
-  }
+  },
+  experimental: {
+    /**
+     * see: https://v3.nuxtjs.org/api/configuration/nuxt.config#inlinessrstyles
+     */
+    inlineSSRStyles: false
+  },
 })
