@@ -6,7 +6,8 @@ export default defineNuxtConfig({
     '@nuxtjs/tailwindcss',
     '@nuxtjs/color-mode',
     '@nuxt/icon',
-    '@nuxtjs/google-fonts'
+    '@nuxtjs/google-fonts',
+    '@nuxt/test-utils/module',
   ],
   css: ['~/assets/css/globals.css'],
   googleFonts: {
@@ -15,9 +16,7 @@ export default defineNuxtConfig({
     }
   },
   experimental: {
-    /**
-     * see: https://v3.nuxtjs.org/api/configuration/nuxt.config#inlinessrstyles
-     */
-    inlineSSRStyles: false
+    // @ts-expect-error
+    inlineSSRStyles: false /* fixes netlify deployment issue */
   },
 })
