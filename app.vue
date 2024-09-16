@@ -1,5 +1,5 @@
 <template>
-  <div class="relative h-[100vh] w-full font-noto-sans-jp overflow-hidden overscroll-none">
+  <div class="relative h-[100dvh] w-full font-noto-sans-jp overflow-hidden overscroll-none">
     <HeadlinesDisplay />
 
     <ColorModeToggle />
